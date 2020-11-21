@@ -1,0 +1,38 @@
+<div class="content">
+  <mat-toolbar class="mat-elevation-z6">
+    <mat-icon class="mat-8">announcement</mat-icon>
+    <span>&nbsp;Alertas</span>
+  </mat-toolbar>
+  <div class="buttons">
+    <p>Seleccione el tipo de alerta que desea crear.</p>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(1)">
+      <mat-icon class="icon-button">local_hospital</mat-icon>
+      <h2>Emergencia</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(2)">
+      <mat-icon class="icon-button">wb_incandescent</mat-icon>
+      <h2>Alumbrado público</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(3)">
+      <mat-icon class="icon-button">delete_forever</mat-icon>
+      <h2>Basura</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(4)">
+      <mat-icon class="icon-button">local_fire_department</mat-icon>
+      <h2>Incendio</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(5)">
+      <mat-icon class="icon-button">bug_report</mat-icon>
+      <h2>Foco de plagas</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(6)">
+      <mat-icon class="icon-button">edit_road</mat-icon>
+      <h2>Daño Carretera</h2>
+    </button>
+    <button class="alert-type" mat-raised-button color="primary" (click)="newAlert(7)">
+      <mat-icon class="icon-button">eco</mat-icon>
+      <h2>Daño ecológico</h2>
+    </button>
+  </div>
+</div>
+

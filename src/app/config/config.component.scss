@@ -1,0 +1,33 @@
+.config-section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.example-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-form button {
+  margin-bottom: 15px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.config-section mat-checkbox {
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+}
+
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 64px;
+  height: 64px;
+}

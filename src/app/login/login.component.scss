@@ -1,0 +1,30 @@
+.content{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c3b6a;
+}
+
+.my-card {
+  margin: 5px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-card-actions button {
+  width: 100%;
+  margin-left: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+mat-card-actions a {
+  margin-bottom: 10px;
+}
+
+mat-card-actions {
+  display: flex;
+  flex-direction: column;
+}

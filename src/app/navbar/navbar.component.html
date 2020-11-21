@@ -1,0 +1,14 @@
+<mat-toolbar class="toolbarNav mat-elevation-z6" matRipple>
+  <button mat-icon-button (click)="changeIndex(0)" [color]="activeIndex==0 ? 'accent' : 'primary'">
+    <mat-icon class="material-icons">home</mat-icon>
+  </button>
+  <button mat-icon-button (click)="changeIndex(1)" [color]="activeIndex==1 ? 'accent' : 'primary'">
+    <mat-icon class="material-icons">announcement</mat-icon>
+  </button>
+  <button mat-icon-button matBadge="4" matBadgeColor="warn" (click)="changeIndex(2)" [color]="activeIndex==2 ? 'accent' : 'primary'">
+    <mat-icon class="material-icons">sticky_note_2</mat-icon>
+  </button>
+  <button mat-icon-button (click)="changeIndex(3)" [color]="activeIndex==3 ? 'accent' : 'primary'">
+    <mat-icon class="material-icons">settings</mat-icon>
+  </button>
+</mat-toolbar>

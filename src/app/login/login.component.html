@@ -1,0 +1,25 @@
+<div class="content">
+<mat-card class="my-card" >
+  <img mat-card-image src="/assets/img/municipalidad.JPG" alt="Logotipo Santa Ana">
+  <mat-card-content>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Usuario</mat-label>
+        <input matInput type="text" placeholder="Usuario">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="Constraseña">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">Entrar</button>
+    <button mat-stroked-button (click)="register()">Registro</button>
+    <a href="#">Olvidé mi contraseña</a>
+    <a href="#">Términos y condiciones</a>
+  </mat-card-actions>
+  <span>®2020 Bit Sistemas de Guatemala</span>
+</mat-card>
+</div>

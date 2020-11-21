@@ -1,0 +1,37 @@
+<div class="content">
+  <mat-card class="my-card" >
+    <img mat-card-image src="/assets/img/municipalidad.JPG" alt="Logotipo Santa Ana">
+    <h1>Registro</h1>
+    <mat-card-content>
+      <p>Por favor ingrese sus datos para iniciar el registro</p>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre completo</mat-label>
+          <input matInput type="text" placeholder="Nombre Completo">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Teléfono</mat-label>
+          <input matInput type="text" placeholder="Teléfono">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>E-mail</mat-label>
+          <input matInput type="email" placeholder="Email">
+        </mat-form-field>
+        <mat-divider></mat-divider>
+        <mat-form-field class="example-full-width">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" placeholder="Constraseña">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Confirmar Contraseña</mat-label>
+          <input matInput type="password" placeholder="Constraseña">
+        </mat-form-field>
+        <mat-checkbox color="primary">Acepto los términos y condiciones</mat-checkbox>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="register()" color="primary">Enviar</button>
+      <button mat-stroked-button (click)="back()">Regresar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,62 @@
+<div class="content">
+  <mat-toolbar class="mat-elevation-z6">
+    <mat-icon class="mat-8">settings</mat-icon>
+    <span>&nbsp;Configuraciones</span>
+  </mat-toolbar>
+  <mat-tab-group>
+    <mat-tab label="Perfil">
+      <div class="config-section">
+        <h3>Perfil del usuario
+          <button mat-icon-button>
+            <mat-icon class="mat-18">edit</mat-icon>
+          </button></h3>
+        <img class="avatar" src="/assets/img/avatar.png">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre completo</mat-label>
+          <input matInput type="text" placeholder="Nombre Completo" value="Luis Fernando López Argueta">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Teléfono</mat-label>
+          <input matInput type="text" placeholder="Teléfono" value="5555-5555">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>E-mail</mat-label>
+          <input matInput type="email" placeholder="Email" value="soporte@bitsis.gt">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="button">Restablecer contraseña</button>
+        <button mat-raised-button color="primary" (click)="close()" type="button">Cerrar Sesión</button>
+      </form>
+      </div>
+    </mat-tab>
+    <mat-tab label="General">
+      <div class="config-section">
+        <h3>Configuraciones generales del sistema</h3>
+        <mat-checkbox color="primary">Habilitar la ubicación del dispositivo</mat-checkbox>
+        <mat-checkbox color="primary">Habilitar el uso de la cámara</mat-checkbox>
+        <mat-checkbox color="primary">Habilitar las notificaciones de escritorio</mat-checkbox>
+        <mat-divider></mat-divider>
+        <h3>Configuraciones de visualización</h3>
+        <mat-slide-toggle
+          class="example-margin" color="primary">
+          Modo Oscuro
+        </mat-slide-toggle>
+        <mat-checkbox color="primary" checked>Mostrar los reportes finalizados</mat-checkbox>
+      </div>
+    </mat-tab>
+    <mat-tab label="Acerca de">
+      <div class="config-section">
+      <h3>Información de la aplicación</h3>
+        <p>Nombre: Sistema de Alerta Municipales 2020</p>
+      <p>Datos de la versión: 1.1 build 2e32ad49be40a3cad321</p>
+        <p>Fecha de compilación: Octubre 2020</p>
+        <a href="https://bitsis.gt"><img class="logo" src="https://bitsis.gt/assets/img/logo/loader.png"></a>
+      <p>® 2020 Bit Sistemas de Guatemala S.A.</p>
+      <mat-divider></mat-divider>
+      <a href="#">Ver términos y condiciones</a>
+      <a href="#">Políticas de seguridad</a>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+

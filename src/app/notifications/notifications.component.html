@@ -1,0 +1,268 @@
+<div class="content">
+  <mat-toolbar class="mat-elevation-z6">
+    <mat-icon class="mat-8">sticky_note_2</mat-icon>
+    <span>&nbsp;Notificaciones</span>
+  </mat-toolbar>
+  <div class="feed">
+    <h2>Mis Reportes Activos</h2>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">wb_incandescent</mat-icon>
+        <mat-card-title>Reporte Alumbrado público</mat-card-title>
+        <mat-card-subtitle>Hace 4 horas</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+      <mat-chip-list aria-label="estado">
+        <mat-chip>Estado: En espera</mat-chip>
+        <mat-chip color="warn" selected>Prioridad: Urgente</mat-chip>
+      </mat-chip-list>
+      </div>
+      <img mat-card-image src="https://e.rpp-noticias.io/normal/2016/11/02/073807_279540.png">
+      <mat-card-content>
+        <p>
+          Poste caído en la 3a Avenida.
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Ver detalles</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">delete_forever</mat-icon>
+        <mat-card-title>Reporte de Basura</mat-card-title>
+        <mat-card-subtitle>Hace 3 días</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+        <mat-chip-list aria-label="estado">
+          <mat-chip>Estado: Activo</mat-chip>
+          <mat-chip selected>Prioridad: Normal</mat-chip>
+        </mat-chip-list>
+      </div>
+      <img mat-card-image src="https://www.ecologistasenaccion.org/wp-content/uploads/adjuntos-spip/jpg/basura-2.jpg">
+      <mat-card-content>
+        <p>
+          Basurero clandestino del lado de los vecinos.
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Ver detalles</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">wb_incandescent</mat-icon>
+        <mat-card-title>Reporte de Daño Carretera</mat-card-title>
+        <mat-card-subtitle>Hace 7 días</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+        <mat-chip-list aria-label="estado">
+          <mat-chip>Estado: Activo</mat-chip>
+          <mat-chip color="warn" selected>Prioridad: Urgente</mat-chip>
+        </mat-chip-list>
+      </div>
+      <img mat-card-image src="https://scontent.fgua2-1.fna.fbcdn.net/v/t1.0-9/11045377_345494852323368_3441880578147711371_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=-lBrznlNitwAX-u33wN&_nc_ht=scontent.fgua2-1.fna&oh=2ae485eea94d242ff25d06e5ea7e0a62&oe=5FAD8161">
+      <mat-card-content>
+        <p>
+          Bache profundo en calle
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Ver detalles</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">eco</mat-icon>
+        <mat-card-title>Reporte Daño Ecológico</mat-card-title>
+        <mat-card-subtitle>Hace 15 días</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+        <mat-chip-list aria-label="estado">
+          <mat-chip>Estado: Activo</mat-chip>
+          <mat-chip color="primary" selected>Prioridad: Normal</mat-chip>
+        </mat-chip-list>
+      </div>
+      <img mat-card-image src="https://miningworks.gt/wp-content/uploads/2019/12/8246070cfa62f8e6e0c5c7d119a03dcb.jpg">
+      <mat-card-content>
+        <p>
+          Tala ilegal de árboles en el bosque km 15.
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="olds">
+    <h2>Reportes finalizados</h2>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">local_fire_department</mat-icon>
+        <mat-card-title>Reporte de Incendio</mat-card-title>
+        <mat-card-subtitle>Hace 1 mes</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+        <mat-chip-list aria-label="estado">
+          <mat-chip color="accent" selected>Estado: Finalizado</mat-chip>
+          <mat-chip color="warn" selected>Prioridad: Urgente</mat-chip>
+        </mat-chip-list>
+      </div>
+      <mat-card-content>
+        <p>
+          Incendio reportado en el mercadito sur.
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Ver detalles</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card mat-elevation-z6">
+      <mat-card-header>
+        <mat-icon class="mat-18">delete_forever</mat-icon>
+        <mat-card-title>Reporte de Basura</mat-card-title>
+        <mat-card-subtitle>Hace 1 mes y 14 días</mat-card-subtitle>
+      </mat-card-header>
+      <div class="chips" >
+        <mat-chip-list aria-label="estado">
+          <mat-chip color="accent" selected>Estado: Finalizado</mat-chip>
+          <mat-chip selected>Prioridad: Normal</mat-chip>
+        </mat-chip-list>
+      </div>
+      <img mat-card-image src="https://www.ambientum.com/wp-content/uploads/2018/10/basura-medio-ambiente-696x392.jpg">
+      <mat-card-content>
+        <p>
+         Basura en la autopista central
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+          <mat-icon>more_vert</mat-icon>
+          Opciones
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Ver detalles</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>cancel</mat-icon>
+            <span>Anular</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>comment</mat-icon>
+            <span>Añadir comentario</span>
+          </button>
+        </mat-menu>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <button mat-mini-fab class="upper-button" color="primary">
+    <mat-icon (click)="gotoTop()">arrow_upward</mat-icon>
+  </button>
+</div>
