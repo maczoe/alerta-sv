@@ -1,0 +1,15 @@
+<mat-card class="example-card mat-elevation-z6">
+    <mat-card-header>
+        <mat-card-title> {{ noticia.title}} </mat-card-title>
+        <mat-card-subtitle>{{ noticia.subtitle}} </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/img/{{ noticia.img}} ">
+    <mat-card-content>
+        <p>
+            {{ noticia.description}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions align="right">
+        <button mat-button color="accent">Ver más</button>
+    </mat-card-actions>
+</mat-card>
