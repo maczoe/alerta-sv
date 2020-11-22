@@ -32,6 +32,7 @@ import {MatChipsModule} from "@angular/material/chips";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { NoticiaCardComponent } from './components/noticia-card/noticia-card.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     NewAlertComponent,
     ConfigComponent,
     ProfileComponent,
-    ConfirmDialog
+    ConfirmDialog,
+    NoticiaCardComponent
   ],
   imports: [
     BrowserModule,
