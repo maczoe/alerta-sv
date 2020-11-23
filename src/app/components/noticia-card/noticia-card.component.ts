@@ -9,7 +9,7 @@ import { Noticia } from '../../servicios/noticias.service';
 })
 export class NoticiaCardComponent implements OnInit {
 
-  @Input() noticia:Noticia = {};
+  @Input() noticia:any = {};
 
   constructor() { }
 
