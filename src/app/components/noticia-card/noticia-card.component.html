@@ -6,7 +6,7 @@
     <img mat-card-image src="assets/img/{{ noticia.img}} ">
     <mat-card-content>
         <p>
-            {{ noticia.description}}
+            {{ noticia.description | slice:0:90 }} ....
         </p>
     </mat-card-content>
     <mat-card-actions align="right">

@@ -43,8 +43,16 @@ export class NoticiasService {
       id: 5,
       title: "Se continúa trabajando en el mantenimiento de las calles.",
       subtitle: "Municipalidad de Jutiapa",
-      img: "home-img6.jpg",
+      img: "home-img7.jpg",
       description: 'De esta manera estamos trabajando en apoyo a las comunidades que luego de las constantes lluvias sus principales calles quedaron inaccesibles. Esta vez se trabaja en la conformación y cuneteo de la calle principal que conecta la ruta CA-1 con la ciudad vía hospital Nacional.'
+    }
+    ,
+    {
+      id: 6,
+      title: "Iniciamos la semana con mucho trabajo",
+      subtitle: "Municipalidad de Jutiapa",
+      img: "home-img6.jpg",
+      description: 'Iniciamos la semana con mucho trabajo, nuestros notificadores ya están visitando sus hogares, le recordamos que el personal de la Municipalidad de Jutiapa está identificado y que cualquier alteración en nuestras notificaciones es un delito penado por la ley por lo que le pedimos nos reporte cualquier tipo de anomalías. '
     }
   ];
 

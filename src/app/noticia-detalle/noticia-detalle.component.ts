@@ -15,9 +15,17 @@ export class NoticiaDetalleComponent implements OnInit {
 
   constructor( private noticiaService: NoticiasService,
                 private route:ActivatedRoute
-    ) { }
+    ) { 
+      
+    }
 
   ngOnInit(): void {
+    
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     //recibimos parametros enviados por url
     this.route.params.subscribe(params=>{
       this.type = +params['type'];
@@ -25,7 +33,7 @@ export class NoticiaDetalleComponent implements OnInit {
     });
     this.noticia =  this.noticiaService.getNoticia(this.type)[0];
 
-    console.log(this.noticia);
+    
     
     
   }

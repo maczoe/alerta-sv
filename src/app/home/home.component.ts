@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     //this.heores= this._heroesService.getHereos();
-    this.noticias= this.noticiaService.getNoticias();
+    this.noticias= this.noticiaService.getNoticias().reverse();
 
   }
 
