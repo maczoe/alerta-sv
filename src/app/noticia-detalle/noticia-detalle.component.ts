@@ -20,7 +20,7 @@ export class NoticiaDetalleComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    
+
     window.scroll({
       top: 0,
       left: 0,
