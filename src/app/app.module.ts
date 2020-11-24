@@ -33,6 +33,10 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { NoticiaCardComponent } from './components/noticia-card/noticia-card.component';
+import { NotifiCardComponent } from './components/notifi-card/notifi-card.component';
+
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +51,8 @@ import { NoticiaCardComponent } from './components/noticia-card/noticia-card.com
     ConfigComponent,
     ProfileComponent,
     ConfirmDialog,
-    NoticiaCardComponent
+    NoticiaCardComponent,
+    NotifiCardComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +76,8 @@ import { NoticiaCardComponent } from './components/noticia-card/noticia-card.com
     MatChipsModule,
     MatMenuModule,
     MatTabsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import { NotificationsService } from '../servicios/notifications.service';
+
+
 
 @Component({
   selector: 'app-new-alert',
@@ -9,18 +12,39 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./new-alert.component.scss']
 })
 export class NewAlertComponent implements OnInit {
+  
+ date: Date = new Date();
 
   type: number;
   title: string = "";
   icon: string = "";
   srcResult;
+   //guardado temporal 
+  datos= {
 
-  constructor(private route: ActivatedRoute, private router: Router, public dialog: MatDialog) {
+    
+    type: 1,
+    fecha: '',
+    status: 1,
+    priority: 1,
+    ubicacion: '',
+    direccion: '',
+
+    description: ''
+
+  };
+ 
+
+
+  constructor(private route: ActivatedRoute, private router: Router, public dialog: MatDialog,
+    private  notiService:NotificationsService
+    ) {
   }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.type = +params['type'];
+      this.datos.type=this.type;
       switch(this.type) {
         case 1:
           this.title = "Emergencia";
@@ -72,7 +96,17 @@ export class NewAlertComponent implements OnInit {
   }
 
   send() {
-      this.dialog.open(ConfirmDialog);
+     const dialog= this.dialog.open(ConfirmDialog);
+     dialog.afterClosed().subscribe(result =>{           
+        if(result=='true'){
+          this.datos.fecha= this.date.getDay() + '/'+ this.date.getMonth() +'/' +this.date.getFullYear();
+          this.datos.id =Math.round(Math.random() * (9999 - 50) + 50);
+          this.router.navigateByUrl('notifications');
+          this.notiService.addNotifi(this.datos);
+        }
+     });
+      
+      
   }
 
   back() {
@@ -95,6 +129,7 @@ export class NewAlertComponent implements OnInit {
 
     reader.onload = (_event) => {
       this.srcResult= reader.result;
+      this.datos.img = reader.result;
     }
   }
 }
@@ -105,9 +140,7 @@ export class NewAlertComponent implements OnInit {
 })
 export class ConfirmDialog {
 
-  constructor(private _snackBar: MatSnackBar) {
-
-  }
+  constructor(private _snackBar: MatSnackBar) {}
 
   confirm() {
     this._snackBar.open('Su reporte ha sido enviado exitosamente', 'Cerrar', {
@@ -115,6 +148,8 @@ export class ConfirmDialog {
       horizontalPosition: "center",
       verticalPosition: "bottom"
     });
-
+    return 1;
   }
 }
+
+

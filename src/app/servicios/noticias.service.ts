@@ -50,6 +50,7 @@ export class NoticiasService {
 
   constructor() { }
 
+  //retornar todas las not
   getNoticias():Noticia[]{
     return this.noticias;
   }

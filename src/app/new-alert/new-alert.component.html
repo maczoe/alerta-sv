@@ -1,44 +1,43 @@
 <div class="content">
-  <mat-toolbar class="mat-elevation-z6">
-    <mat-icon class="mat-8">{{icon}}</mat-icon>
-    <span>&nbsp;{{title}}</span>
-    <span class="example-spacer"></span>
-    <a mat-icon-button href="alerts">
-      <mat-icon class="mat-8">arrow_back</mat-icon>
-    </a>
-  </mat-toolbar>
-  <div class="alert-form">
-    <p>
-      Complete los detalles de su reporte de alertas.
-    </p>
-    <form class="example-form">
-      <mat-checkbox class="form-field" color="primary">Enviar como usuario anónimo</mat-checkbox>
-      <mat-form-field class="example-full-width">
-        <mat-label>Ubicación</mat-label>
-        <input matInput type="text" placeholder="Ubicación">
-      </mat-form-field>
-      <mat-form-field class="example-full-width">
-        <mat-label>Detalle</mat-label>
-        <textarea matInput rows="7"></textarea>
-      </mat-form-field>
-      <div class="form-image"><img [src]="srcResult" *ngIf="srcResult"></div>
-      <button class="form-field" type="button" mat-stroked-button (click)="fileInput.click()">
+    <mat-toolbar class="mat-elevation-z6">
+        <mat-icon class="mat-8">{{icon}}</mat-icon>
+        <span>&nbsp;{{title}}</span>
+        <span class="example-spacer"></span>
+        <a mat-icon-button href="alerts">
+            <mat-icon class="mat-8">arrow_back</mat-icon>
+        </a>
+    </mat-toolbar>
+    <div class="alert-form">
+        <p>
+            Complete los detalles de su reporte de alertas.
+        </p>
+        <form class="example-form">
+            <mat-checkbox class="form-field" color="primary">Enviar como usuario anónimo</mat-checkbox>
+            <mat-form-field class="example-full-width">
+                <mat-label>Ubicación</mat-label>
+                <input matInput type="text" placeholder="Ubicación" name="direccion" [(ngModel)]="datos.direccion">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Detalle</mat-label>
+                <textarea matInput rows="7" name="description" [(ngModel)]="datos.description"></textarea>
+            </mat-form-field>
+            <div class="form-image"><img [src]="srcResult" *ngIf="srcResult"></div>
+            <button class="form-field" type="button" mat-stroked-button (click)="fileInput.click()">
       &nbsp;<mat-icon class="mat-12">add_a_photo</mat-icon>Subir foto...</button>
-      <input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file">
-      <mat-checkbox class="form-field" color="primary" checked="checked" #check>Compartir ubicación actual</mat-checkbox>
-      <mat-accordion class="form-field" *ngIf="check.checked">
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <mat-icon class="mat-18">place</mat-icon>Ver mapa ubicación
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <google-map height="240px" width="100%" > </google-map>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <button class="actions" mat-raised-button color="primary" (click)="send()" type="button">Enviar</button>
-      <button class="actions" mat-stroked-button color="primary" (click)="back()" type="reset">Regresar</button>
-    </form>
-  </div>
+            <input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file">
+            <mat-checkbox class="form-field" color="primary" checked="checked" #check>Compartir ubicación actual</mat-checkbox>
+            <mat-accordion class="form-field" *ngIf="check.checked">
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon class="mat-18">place</mat-icon>Ver mapa ubicación
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <google-map height="240px" width="100%"> </google-map>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <button class="actions" mat-raised-button color="primary" (click)="send()" type="button">Enviar</button>
+            <button class="actions" mat-stroked-button color="primary" (click)="back()" type="reset">Regresar</button>
+        </form>
+    </div>
 </div>
-
