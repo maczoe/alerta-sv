@@ -8,6 +8,7 @@ import {ConfigComponent} from "./config/config.component";
 import {NotificationsComponent} from "./notifications/notifications.component";
 import {ProfileComponent} from "./profile/profile.component";
 import {NewAlertComponent} from "./new-alert/new-alert.component";
+import { NoticiaDetalleComponent } from './noticia-detalle/noticia-detalle.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'alerts', component: AlertsComponent },
   { path: 'alerts/new/:type', component: NewAlertComponent },
+  { path: 'noticia/detalle/:type', component: NoticiaDetalleComponent },
   { path: 'config', component: ConfigComponent },
   { path: 'notifications', component: NotificationsComponent },
   { path: 'profile', component: ProfileComponent },

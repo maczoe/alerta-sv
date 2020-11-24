@@ -1,0 +1,45 @@
+<div class="content feed-general ">
+
+    <mat-toolbar class="mat-elevation-z6">
+        <a mat-icon-button href="home">
+            <mat-icon class="mat-8">arrow_back</mat-icon>
+        </a>
+        <span>&nbsp; Detalles </span>
+
+    </mat-toolbar>
+    <mat-card class="example-card  feed">
+        <mat-card-header>
+            <mat-card-title> {{ noticia.title }} </mat-card-title>
+            <mat-card-subtitle> {{ noticia.subtitle }} </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/img/{{ noticia.img }}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>{{ noticia.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-stroked-button color="primary">Comentar</button>
+        </mat-card-actions>
+    </mat-card>
+
+
+    <div class="coments">
+        <h2>Comentarios</h2>
+        <hr>
+        <mat-card class="example-card feed-coment">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"><img mat-card-avatar class="example-header-image" src="assets/img/profile/img1.jpg" alt="" srcset=""></div>
+                <mat-card-title class="coment-title ">Jorge Melgar</mat-card-title>
+                <mat-card-subtitle> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veritatis. Vitae, expedita eveniet. Sed et, numquam maiores sequi atque corrupti optio, aliquid aspernatur dolore ex amet quasi non quos voluptatem! </mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+
+        <mat-card class="example-card feed-coment">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"><img mat-card-avatar class="example-header-image" src="assets/img/profile/img2.jpg" alt="" srcset=""></div>
+                <mat-card-title class="coment-title ">Yessica Alvarado </mat-card-title>
+                <mat-card-subtitle> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veritatis.</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+    </div>
+
+</div>

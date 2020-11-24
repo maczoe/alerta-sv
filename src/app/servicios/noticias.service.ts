@@ -54,6 +54,11 @@ export class NoticiasService {
   getNoticias():Noticia[]{
     return this.noticias;
   }
+
+  //retornar noticia segun id
+  getNoticia(type){
+    return this.noticias.filter(x => x.id == type);
+  }
 }
 
 

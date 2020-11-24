@@ -36,6 +36,7 @@ import { NoticiaCardComponent } from './components/noticia-card/noticia-card.com
 import { NotifiCardComponent } from './components/notifi-card/notifi-card.component';
 
 import { FormsModule } from '@angular/forms';
+import { NoticiaDetalleComponent } from './noticia-detalle/noticia-detalle.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { FormsModule } from '@angular/forms';
     ProfileComponent,
     ConfirmDialog,
     NoticiaCardComponent,
-    NotifiCardComponent
+    NotifiCardComponent,
+    NoticiaDetalleComponent
   ],
   imports: [
     BrowserModule,
