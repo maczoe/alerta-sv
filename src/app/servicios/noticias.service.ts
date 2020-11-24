@@ -54,6 +54,16 @@ export class NoticiasService {
       img: "home-img6.jpg",
       description: 'Iniciamos la semana con mucho trabajo, nuestros notificadores ya están visitando sus hogares, le recordamos que el personal de la Municipalidad de Jutiapa está identificado y que cualquier alteración en nuestras notificaciones es un delito penado por la ley por lo que le pedimos nos reporte cualquier tipo de anomalías. '
     }
+    ,
+    {
+      id: 7,
+      title: "Se dio inicio los trabajos de conformación, compactación y colocación de la capa asfáltica",
+      subtitle: "Municipalidad de Jutiapa",
+      img: "home-img9.jpg",
+      description: `Está mañana dieron inicio los trabajos de conformación, compactación y colocación de la capa asfáltica en el sector conocido como El Nancito, la calle del Cerro Colorado, atrás de gasolinera Shell.
+      Este tramo fue gestionado con COVIAL del Ministerio de Comunicaciones por el Alcalde de Jutiapa y miembros del CONCEJO para mejorar este sector y que sirva como vía alterna que conecta la ruta hacia la montaña.
+      Se pide a pilotos automovilista s tomar sus precauciones, ya que el tránsito no está permitido hasta que finalicen los trabajos.`
+    }
   ];
 
   constructor() { }
