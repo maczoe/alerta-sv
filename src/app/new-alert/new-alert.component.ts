@@ -21,17 +21,15 @@ export class NewAlertComponent implements OnInit {
   srcResult;
    //guardado temporal 
   datos= {
-
-    
+    id: null,
     type: 1,
     fecha: '',
     status: 1,
     priority: 1,
     ubicacion: '',
     direccion: '',
-
+    img: null,
     description: ''
-
   };
  
 
