@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "alert-sv"
+  "defaultProject": "alert-sv",
+  "cli": {
+    "analytics": false
+  }
 }

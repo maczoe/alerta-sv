@@ -1,0 +1,60 @@
+<mat-card class="example-card mat-elevation-z6">
+    <mat-card-header>
+        <mat-icon class="mat-18"> {{ getTypeNoti(noti.type)[0].icon }}</mat-icon>
+        <mat-card-title>Reporte: {{ getTypeNoti(noti.type)[0].title }}</mat-card-title>
+        <mat-card-subtitle>{{ noti.fecha }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="chips">
+        <mat-chip-list aria-label="estado">
+            <div *ngIf="noti.status == 1">
+                <mat-chip>Estado: En espera</mat-chip>
+            </div>
+            <div *ngIf="noti.status == 2">
+                <mat-chip>Estado: Activo</mat-chip>
+            </div>
+            <div *ngIf="noti.status == 3">
+                <mat-chip>Estado: Falizado</mat-chip>
+            </div>
+            <div *ngIf="noti.priority == 1">
+                <mat-chip selected>Prioridad: Normal</mat-chip>
+            </div>
+
+            <div *ngIf="noti.priority == 2">
+                <mat-chip color="warn" selected>Prioridad: Urgente</mat-chip>
+            </div>
+
+        </mat-chip-list>
+    </div>
+    <img mat-card-image [src]="noti.img" *ngIf="noti.img">
+    <img mat-card-image src="assets/img/no-image.jpg" *ngIf="!noti.img">
+
+    <mat-card-content>
+        <p>
+            {{ noti.description }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions align="left">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu de opciones">
+        <mat-icon>more_vert</mat-icon>
+        Opciones
+      </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+          <mat-icon>search</mat-icon>
+          <span>Ver detalles</span>
+        </button>
+            <button mat-menu-item>
+          <mat-icon>edit</mat-icon>
+          <span>Editar</span>
+        </button>
+            <button mat-menu-item>
+          <mat-icon>cancel</mat-icon>
+          <span>Anular</span>
+        </button>
+            <button mat-menu-item>
+          <mat-icon>comment</mat-icon>
+          <span>Añadir comentario</span>
+        </button>
+        </mat-menu>
+    </mat-card-actions>
+</mat-card>

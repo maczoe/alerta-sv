@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Notification, NotificationsService } from '../servicios/notifications.service';
 
 @Component({
   selector: 'app-notifications',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsComponent implements OnInit {
 
-  constructor() { }
+  
+
+  //list
+  notifiE:Notification[]=[];
+  notifiA:Notification[]=[];
+  notifiF:Notification[]=[];
+
+
+
+  constructor( private notifiService: NotificationsService) { }
 
   ngOnInit(): void {
+   
+    this.notifiE = this.notifiService.getNotifiStatus(1);
+    this.notifiA = this.notifiService.getNotifiStatus(2);
+    this.notifiF = this.notifiService.getNotifiStatus(3);
+
+
+    
   }
 
   gotoTop() {
